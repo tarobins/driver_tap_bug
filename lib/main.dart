@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_driver/driver_extension.dart';
 
-const targetKey = Key('target');
-
 void main() {
   // Enable integration testing with the Flutter Driver extension.
   // See https://flutter.dev/testing/ for more info.
@@ -113,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
         height: 200,
         width: 200,
         child: GestureDetector(
-          key: targetKey,
+          key: Key('target'),
           onTap: _incrementCounter,
 //          child: Container(
 //            decoration: BoxDecoration(color: Color.fromARGB(0, 0, 0, 0)),
