@@ -113,6 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: GestureDetector(
           key: Key('target'),
           onTap: _incrementCounter,
+          behavior: HitTestBehavior.translucent,
 //          child: Container(
 //            decoration: BoxDecoration(color: Color.fromARGB(0, 0, 0, 0)),
 //          ),
